@@ -1,0 +1,11 @@
+/* .ancestor . child: means select only children of ancestor */
+/* so, only select class .text when its ancestor (at any point) is .container */
+.container .text {
+    background-color:yellow;
+    color:red;
+    font-size:20px;
+    text-align:center;
+}
+
+
+/* Note we could've also done div .text, for example. But this is best */
