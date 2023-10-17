@@ -8,7 +8,8 @@ body{
   font-weight: 800;
 }
 
-.small-para {
+/* Added a ".para" in front of .small-para to specificy we need smaller */
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,19 +18,21 @@ body{
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
+/* Swapped .button here with .confirm in terms of order */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/* Added ".text " in front of .child so it becomes a descendant combinator */
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -40,3 +43,4 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
